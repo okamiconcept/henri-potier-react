@@ -21,7 +21,7 @@ const Book: React.FC<BookProps> = ({ product }) => {
           <div className="media-content">
             <p className="title is-4">{product.title}</p>
             <p className="subtitle is-6">
-              {product.price} €
+              {product.price.toFixed(2)} €
               <button
                 className="button is-info is-pulled-right"
                 onClick={() => {
