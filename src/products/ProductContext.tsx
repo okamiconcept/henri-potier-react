@@ -1,26 +1,6 @@
 import React, { createContext, useContext, useEffect, useReducer } from "react";
 import { fetchProducts } from "./ProductApi";
-import { Product } from "./ProductModel";
-
-type ActionDispatch =
-  | {
-      type: Action.GET_PRODUCTS;
-    }
-  | {
-      type: Action.PRODUCTS_RESPONSE;
-      payload: Product[];
-    };
-
-enum Action {
-  GET_PRODUCTS = "GET_PRODUCTS",
-  PRODUCTS_RESPONSE = "PRODUCTS_RESPONSE"
-}
-export type Dispatch = (action: ActionDispatch) => void;
-type State = {
-  count: number;
-  loading: boolean;
-  products: Product[];
-};
+import { Action, ActionDispatch, Dispatch, State } from "./ProductModel";
 
 const initialState: State = {
   count: 0,
@@ -37,6 +17,7 @@ function productReducer(state: State, action: ActionDispatch): State {
     case Action.GET_PRODUCTS: {
       return { ...state, loading: true };
     }
+
     case Action.PRODUCTS_RESPONSE: {
       return {
         ...state,
@@ -59,6 +40,10 @@ function ProductProvider({ children }: ProductProviderProps) {
         payload: products
       });
     };
+
+    dispatch({
+      type: Action.GET_PRODUCTS
+    });
 
     fetchData();
   }, []);

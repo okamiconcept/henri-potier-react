@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Header from "./Header";
-import { OrderProvider } from "./OrderContext";
+import { OrderProvider } from "./order/OrderContext";
+import Header from "./shared/Header";
 import "./styles/App.scss";
 import Cart from "./views/Cart";
 import Home from "./views/Home";

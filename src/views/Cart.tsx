@@ -1,5 +1,5 @@
 import React from "react";
-import { Action, useOrder } from "../OrderContext";
+import { Action, useOrder } from "../order/OrderContext";
 
 const Cart: React.FC = () => {
   const [stateOrder, dispatchOrder] = useOrder();

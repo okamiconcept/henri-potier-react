@@ -1,6 +1,6 @@
 import React from "react";
-import BookList from "../BookList";
-import { ProductProvider } from "../ProductContext";
+import BookList from "../products/BookList";
+import { ProductProvider } from "../products/ProductContext";
 
 const Products: React.FC = () => {
   return (

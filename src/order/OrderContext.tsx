@@ -1,44 +1,7 @@
 import React, { createContext, useContext, useEffect, useReducer } from "react";
-import { fetchCommercialOffers } from "./ProductApi";
-import { CommercialOffer, OrderItem, Product } from "./ProductModel";
-
-type ActionDispatch =
-  | {
-      type: Action.INIT_ORDER;
-      payload: State;
-    }
-  | {
-      type: Action.ADD_TO_ORDER;
-      payload: Product;
-    }
-  | {
-      type: Action.DELETE_ORDER_ITEM;
-      payload: OrderItem;
-    }
-  | {
-      type: Action.CHANGE_QUANTITY_ORDER_ITEM;
-      payload: { item: OrderItem; quantity: number };
-    }
-  | {
-      type: Action.COMMERCIAL_OFFERS_RESPONSE;
-      payload: CommercialOffer[];
-    };
-
-enum Action {
-  INIT_ORDER = "INIT_ORDER",
-  ADD_TO_ORDER = "ADD_TO_ORDER",
-  DELETE_ORDER_ITEM = "DELETE_ORDER_ITEM",
-  CHANGE_QUANTITY_ORDER_ITEM = "CHANGE_QUANTITY_ORDER_ITEM",
-  COMMERCIAL_OFFERS_RESPONSE = "COMMERCIAL_OFFERS_RESPONSE"
-}
-export type Dispatch = (action: ActionDispatch) => void;
-type State = {
-  total: number;
-  count: number;
-  reduction: { offer: CommercialOffer; amount: number } | null;
-  items: OrderItem[];
-  offers: CommercialOffer[];
-};
+import { fetchCommercialOffers } from "../products/ProductApi";
+import { CommercialOffer } from "../products/ProductModel";
+import { Action, ActionDispatch, Dispatch, State } from "./OrderModel";
 
 const initialState: State = {
   total: 0,
