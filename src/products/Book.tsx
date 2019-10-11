@@ -40,11 +40,11 @@ const Book: React.FC<BookProps> = ({ product }) => {
           </div>
         </div>
 
-        <div className="content">
+        {/* <div className="content">
           {product.synopsis.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
