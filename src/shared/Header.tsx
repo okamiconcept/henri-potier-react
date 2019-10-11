@@ -14,7 +14,7 @@ const Header: React.FC = () => {
       >
         <div className="navbar-brand">
           <Link className="navbar-item" to="/">
-            HENRI POTTIER
+            HENRI POTIER
           </Link>
 
           <a
