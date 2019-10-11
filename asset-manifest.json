@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react-henri-pottier/static/css/main.a9f2fcbd.chunk.css",
-    "main.js": "/react-henri-pottier/static/js/main.e086b155.chunk.js",
-    "main.js.map": "/react-henri-pottier/static/js/main.e086b155.chunk.js.map",
-    "runtime-main.js": "/react-henri-pottier/static/js/runtime-main.29d129cf.js",
-    "runtime-main.js.map": "/react-henri-pottier/static/js/runtime-main.29d129cf.js.map",
-    "static/js/2.a54e57a7.chunk.js": "/react-henri-pottier/static/js/2.a54e57a7.chunk.js",
-    "static/js/2.a54e57a7.chunk.js.map": "/react-henri-pottier/static/js/2.a54e57a7.chunk.js.map",
-    "index.html": "/react-henri-pottier/index.html",
-    "precache-manifest.9827a4a784bcd1eede00709a56091528.js": "/react-henri-pottier/precache-manifest.9827a4a784bcd1eede00709a56091528.js",
-    "service-worker.js": "/react-henri-pottier/service-worker.js",
-    "static/css/main.a9f2fcbd.chunk.css.map": "/react-henri-pottier/static/css/main.a9f2fcbd.chunk.css.map",
-    "static/media/App.scss": "/react-henri-pottier/static/media/fa-solid-900.c2801fb4.svg"
+    "main.css": "/henri-potier-react/static/css/main.474c9053.chunk.css",
+    "main.js": "/henri-potier-react/static/js/main.6ad361cf.chunk.js",
+    "main.js.map": "/henri-potier-react/static/js/main.6ad361cf.chunk.js.map",
+    "runtime-main.js": "/henri-potier-react/static/js/runtime-main.5273633a.js",
+    "runtime-main.js.map": "/henri-potier-react/static/js/runtime-main.5273633a.js.map",
+    "static/js/2.a54e57a7.chunk.js": "/henri-potier-react/static/js/2.a54e57a7.chunk.js",
+    "static/js/2.a54e57a7.chunk.js.map": "/henri-potier-react/static/js/2.a54e57a7.chunk.js.map",
+    "index.html": "/henri-potier-react/index.html",
+    "precache-manifest.9c9d48dfa51b773584fe51cbf45a2f04.js": "/henri-potier-react/precache-manifest.9c9d48dfa51b773584fe51cbf45a2f04.js",
+    "service-worker.js": "/henri-potier-react/service-worker.js",
+    "static/css/main.474c9053.chunk.css.map": "/henri-potier-react/static/css/main.474c9053.chunk.css.map",
+    "static/media/App.scss": "/henri-potier-react/static/media/fa-solid-900.c2801fb4.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.29d129cf.js",
+    "static/js/runtime-main.5273633a.js",
     "static/js/2.a54e57a7.chunk.js",
-    "static/css/main.a9f2fcbd.chunk.css",
-    "static/js/main.e086b155.chunk.js"
+    "static/css/main.474c9053.chunk.css",
+    "static/js/main.6ad361cf.chunk.js"
   ]
 }
