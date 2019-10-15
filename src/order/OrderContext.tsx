@@ -11,7 +11,7 @@ const initialState: State = {
   offers: []
 };
 
-type OrderProviderProps = { children: React.ReactNode };
+type OrderProviderProps = { children: React.ReactNode; stateInit?: State };
 const OrderStateContext = createContext<State | undefined>(undefined);
 const OrderDispatchContext = createContext<Dispatch | undefined>(undefined);
 
@@ -136,8 +136,10 @@ function orderReducer(state: State, action: ActionDispatch): State {
   }
 }
 
-function OrderProvider({ children }: OrderProviderProps) {
+function OrderProvider({ children, stateInit }: OrderProviderProps) {
   const [state, dispatch] = useReducer(orderReducer, initialState);
+
+  stateInit = state;
 
   useEffect(() => {
     const orderStorage = localStorage.getItem("order");

@@ -7,7 +7,7 @@ interface BookProps {
 }
 
 const Book: React.FC<BookProps> = ({ product }) => {
-  const [stateOrder, dispatchOrder] = useOrder();
+  const [, dispatchOrder] = useOrder();
 
   return (
     <div className="card">
