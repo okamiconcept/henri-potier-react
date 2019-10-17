@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/henri-potier-react/precache-manifest.7af12738eea063167c2d4486a57f4378.js"
+  "/henri-potier-react/precache-manifest.545c12ae4a5bc022acc8068992dc3d38.js"
 );
 
 self.addEventListener('message', (event) => {
