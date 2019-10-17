@@ -1,6 +1,6 @@
 import { CommercialOffersResponse, Product } from "./ProductModel";
 
-const apiURL = "http://henri-potier.xebia.fr";
+const apiURL = "https://henri-potier-proxy.herokuapp.com";
 
 const fetchProducts = async () => {
   const route = "/books";
