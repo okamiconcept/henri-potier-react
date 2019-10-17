@@ -10,7 +10,7 @@ import Products from "./views/Products";
 const App: React.FC = () => {
   return (
     <OrderProvider>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div className="container">
           <Header></Header>
 
