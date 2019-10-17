@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a28757f883f9703b632028a66fa086cc",
+    "revision": "17f96e6d4e9e919c49c59058f6a2765d",
     "url": "/henri-potier-react/index.html"
   },
   {
-    "revision": "f80c5e5eae4163fecc24",
-    "url": "/henri-potier-react/static/css/main.474c9053.chunk.css"
+    "revision": "5c7df9bfdba0ee3b6819",
+    "url": "/henri-potier-react/static/css/main.bb3a4a9d.chunk.css"
   },
   {
-    "revision": "5ece34f242b59ed28dd6",
-    "url": "/henri-potier-react/static/js/2.a54e57a7.chunk.js"
+    "revision": "8c1a7b0701c09afa18f8",
+    "url": "/henri-potier-react/static/js/2.e7efb2c1.chunk.js"
   },
   {
-    "revision": "f80c5e5eae4163fecc24",
-    "url": "/henri-potier-react/static/js/main.6ad361cf.chunk.js"
+    "revision": "5c7df9bfdba0ee3b6819",
+    "url": "/henri-potier-react/static/js/main.6d0de7fc.chunk.js"
   },
   {
     "revision": "e19297fc4e9acf26000e",
