@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { OrderProvider } from "./order/OrderContext";
 import Header from "./shared/Header";
 import "./styles/App.scss";
@@ -14,17 +14,11 @@ const App: React.FC = () => {
         <div className="container">
           <Header></Header>
 
-          <Switch>
-            <Route path="/products">
-              <Products />
-            </Route>
-            <Route path="/cart">
-              <Cart />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
+          <Routes>
+            <Route path="/products" element={<Products />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/" element={<Home />} />
+          </Routes>
         </div>
       </Router>
     </OrderProvider>

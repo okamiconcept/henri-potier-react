@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ReactCSSTransitionGroup from "react-addons-css-transition-group";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Book from "./Book";
 import { useProduct } from "./ProductContext";
 
@@ -45,18 +45,21 @@ const BookList: React.FC = () => {
       </div>
 
       {stateProducts.loading === false ? (
-        <ReactCSSTransitionGroup
-          transitionName="fade"
-          transitionEnterTimeout={500}
-          transitionLeaveTimeout={300}
+        <TransitionGroup
           className="columns is-multiline"
         >
           {filteredProducts.map(product => (
-            <div className="column is-one-quarter" key={product.isbn}>
-              <Book product={product}></Book>
-            </div>
+            <CSSTransition
+              key={product.isbn}
+              timeout={500}
+              classNames="fade"
+            >
+              <div className="column is-one-quarter">
+                <Book product={product}></Book>
+              </div>
+            </CSSTransition>
           ))}
-        </ReactCSSTransitionGroup>
+        </TransitionGroup>
       ) : (
         <div>Chargement en cours...</div>
       )}
